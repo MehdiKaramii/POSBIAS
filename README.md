@@ -86,11 +86,7 @@ Let:
 - `s_r` denote the annotated span containing relevance evidence for `q`;
 - `f_θ(q, d)` denote the LLM's predicted document-level relevance score.
 
-The supervision target is derived from the query and the evidence span:
-
-\[
-y(q,s_r) = \operatorname{Normalize}(\operatorname{BM25}(q,s_r))
-\]
+The supervision target is derived from the query and the evidence span.
 
 The model is trained using the complete query–document pair:
 
