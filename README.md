@@ -141,17 +141,15 @@ For a query–document pair, let `S_i` be the set of scores produced for its pos
 
 **Coefficient of Variation (CV)**
 
-\[
-CV_i = \frac{\sigma(S_i)}{\mu(S_i)} \times 100
-\]
+<img width="261" height="121" alt="image" src="https://github.com/user-attachments/assets/edd8454a-85a8-4a3d-ad7f-727492ae5be2" />
+
 
 CV measures the dispersion of predicted scores relative to their mean.
 
 **Positional Sensitivity Index (PSI)**
 
-\[
-PSI_i = 1 - \frac{\min(S_i)}{\max(S_i)}
-\]
+<img width="294" height="108" alt="image" src="https://github.com/user-attachments/assets/fde4ebe4-475f-4a1b-b81a-04f981429675" />
+
 
 PSI measures the relative difference between the minimum and maximum predicted scores. Both measures are calculated for each query–document pair and then averaged over the test set. Lower CV and PSI values indicate lower variation across the evaluated positional configurations.
 
