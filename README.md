@@ -116,9 +116,8 @@ The evaluation covers two complementary aspects of document-level relevance scor
 
 For each held-out query–document pair, the original and fine-tuned models produce document-level relevance scores:
 
-\[
-s_0 = f_{\theta_0}(q,d), \qquad s_* = f_{\theta^*}(q,d)
-\]
+<img width="431" height="94" alt="image" src="https://github.com/user-attachments/assets/2800d6e2-e961-408d-875b-fb40288261a7" />
+
 
 The reference score is obtained by applying BM25 to the query and the **complete document**. The following correlation coefficients are used to compare model predictions with this reference:
 
