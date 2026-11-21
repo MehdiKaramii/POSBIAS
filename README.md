@@ -29,6 +29,11 @@ Document-level relevance estimation determines how well a document satisfies the
 
 This study explores **localized relevance supervision** as a way to guide document-level scoring. BM25 is applied to the query and the annotated relevance evidence span to produce a span-level supervision signal. During fine-tuning, however, the LLM receives the original query and the complete document. The resulting model is evaluated against BM25 scores calculated over complete documents.
 
+Overview of the proposed framework for fine-tuning an LLM with localized relevance supervision and evaluating position bias in document-level relevance scoring:
+
+<img width="852" height="861" alt="image" src="https://github.com/user-attachments/assets/eaf45cfa-1435-4117-9d1f-4ea77adf6b36" />
+
+
 The study addresses three research questions:
 
 1. **RQ1 — Score alignment:** Does fine-tuning with localized relevance supervision improve the alignment between predicted document-level relevance scores and reference relevance scores?
