@@ -95,7 +95,8 @@ y(q,s_r) = \operatorname{Normalize}(\operatorname{BM25}(q,s_r))
 The model is trained using the complete query–document pair:
 
 \[
-\theta^* = \arg\min_{\theta} \mathcal{L}\big(f_{\theta}(q,d), y(q,s_r)\big)
+\<img width="497" height="69" alt="image" src="https://github.com/user-attachments/assets/bcfa04aa-4ee1-4f3e-a3f6-91ac6231bc36" />
+
 \]
 
 where `L` is the training loss. The normalized span-level BM25 score is the target; it is not the model input.
